@@ -24,11 +24,30 @@ const digit_sum = (n: number): number => {
   while (n > 0) {
     total += n % 10;
     n = Math.floor(n / 10);
-    
   }
   if (total > 9) {
     total = digit_sum(total);
   }
-  
+
   return total;
 };
+
+/**
+  export function digitalRoot(n: number): number {
+  return (n - 1) % 9 + 1;
+}
+ */
+
+
+/*
+export const digitalRoot = (n:number):number => {
+  while (n >= 10) {
+    n = n.toString()
+      .split('')
+      .map(x => parseInt(x))
+      .reduce((a, b) => a + b, 0)
+  }
+  return n
+};
+
+*/
