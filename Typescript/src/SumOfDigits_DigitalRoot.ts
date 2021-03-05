@@ -13,18 +13,22 @@
  */
 
 export const digitalRoot = (n: number): number => {
-  var total: number = 0;
-  let x: number = 0;
-  while (n > 0) {
-    let modulus_n :number = n % 10;
-    total += modulus_n; 
-    
-    n = Math.floor(n / 10);
-  }
-  console.log("total = "+total)
-  return total;
+  let result: number = 0;
+  result = digit_sum(n);
+  return result;
 };
 
-const digit_sum = (): number => {
-  return 0;
+/*  จะรับค่า  number เข้ามา  */
+const digit_sum = (n: number): number => {
+  let total: number = 0;
+  while (n > 0) {
+    total += n % 10;
+    n = Math.floor(n / 10);
+    
+  }
+  if (total > 9) {
+    total = digit_sum(total);
+  }
+  
+  return total;
 };

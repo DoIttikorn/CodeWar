@@ -5,4 +5,7 @@ describe("solution", function () {
     assert.equal(solution.digitalRoot(16), 7);
     assert.equal(solution.digitalRoot(456), 6);
   });
+  it("advance test 10 => 1", () => {
+    assert.equal(solution.digitalRoot(10), 1);
+  });
 });
