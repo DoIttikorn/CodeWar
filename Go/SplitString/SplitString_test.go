@@ -1,14 +1,10 @@
-package main
-0
+package SplitString_test
+
 import (
-	. "codewarrior/kata"
+	. "github.com/DoIttikorn/CodeWar/tree/main/Go/SplitString"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
-
-func Solution(str string) []string {
-	//   ใช้ for
-}
 
 var _ = Describe("Split Strings", func() {
 	It("Basic tests", func() {

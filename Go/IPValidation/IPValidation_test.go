@@ -1,8 +1,7 @@
-package test
+package IPValidation_test
 
 import (
-	. "codewarrior/kata"
-
+	. "github.com/DoIttikorn/CodeWar/tree/main/Go/IPValidation"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
