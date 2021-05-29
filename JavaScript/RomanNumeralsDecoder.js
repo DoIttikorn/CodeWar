@@ -46,8 +46,13 @@ function solution(roman) {
     .reduce((s, v, i, o) => s + (o[i + 1] > v ? -v : v), 0);
 }
 
+// @ts-ignore
 Test.assertEquals(solution("XXI"), 21);
+// @ts-ignore
 Test.assertEquals(solution("I"), 1);
+// @ts-ignore
 Test.assertEquals(solution("IV"), 4);
+// @ts-ignore
 Test.assertEquals(solution("MMVIII"), 2008);
+// @ts-ignore
 Test.assertEquals(solution("MDCLXVI"), 1666);
